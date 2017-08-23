@@ -253,17 +253,17 @@ open class SCLAlertView: UIViewController {
     open var customSubview : UIView?
     
     // Members declaration
-    var baseView = UIView()
-    var labelTitle = UILabel()
-    var viewText = UITextView()
-    var contentView = UIView()
-    var circleBG = UIView(frame:CGRect(x:0, y:0, width:kCircleHeightBackground, height:kCircleHeightBackground))
-    var circleView = UIView()
-    var circleIconView : UIView?
-    var timeout: SCLTimeoutConfiguration?
-    var showTimeoutTimer: Timer?
-    var timeoutTimer: Timer?
-    var dismissBlock : DismissBlock?
+    public var baseView = UIView()
+    public var labelTitle = UILabel()
+    public var viewText = UITextView()
+    public var contentView = UIView()
+    public var circleBG = UIView(frame:CGRect(x:0, y:0, width:kCircleHeightBackground, height:kCircleHeightBackground))
+    public var circleView = UIView()
+    public var circleIconView : UIView?
+    public var timeout: SCLTimeoutConfiguration?
+    public var showTimeoutTimer: Timer?
+    public var timeoutTimer: Timer?
+    public var dismissBlock : DismissBlock?
     fileprivate var inputs = [UITextField]()
     fileprivate var input = [UITextView]()
     internal var buttons = [SCLButton]()
